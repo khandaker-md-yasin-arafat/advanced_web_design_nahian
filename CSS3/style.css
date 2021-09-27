@@ -1,0 +1,281 @@
+/* Class, ID, Width & Height */
+.test1{
+    background-color: green;
+    color: yellow;
+    text-align: center;
+}
+.test2{
+    background-color: blue;
+    color: white;
+    text-align: left;
+}
+.test3{
+    background-color: olive;
+    color: goldenrod;
+    text-align: right;
+}
+#test4{
+    background-color: hotpink;
+    color: indigo;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+}
+
+/* Margin & Padding */
+.margin{
+    background-color: lightcoral;
+    color: lightgray;
+    width: 400px;
+    margin: 20px 15px;
+}
+.padding{
+    background-color: lightcoral;
+    color: lightgray;
+    width: 400px;
+    padding: 20px 15px;
+}
+
+/* Div, Float & Display */
+.box{
+    background-color: tomato;
+    width: 400px;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+}
+.box h3{
+    text-align: center;
+    color: wheat;
+    font-size: 35px;
+}
+.box img{
+    width: 100%;
+}
+.box p{
+    color: white;
+    text-align: justify;
+}
+.box a{
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Live Coding With Inspect Element */
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 999px;
+    background: gray;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.card{
+    background-color: teal;
+    width: 273px;
+    padding: 20px;
+    float: left;
+    margin-right: 30px;
+}
+.card:last-child{
+    margin-right: 0;
+}
+.card h4{
+    background-color: coral;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.card img{
+    width: 100%;
+}
+.card p{
+    color: white;
+    margin: 20px 0;
+}
+.card a{
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+}
+.card a:hover{
+    background-color: crimson;
+}
+
+/* Box Shadow */
+.box-shadow{
+    width: 300px;
+    height: 300px;
+    background-color: teal;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px olive;
+}
+.box-shadow p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Text Shadow */
+.text-shadow{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    text-shadow: 5px 5px 5px orangered;
+}
+
+/* Border Radius */
+.border-radius{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 150px auto;
+    border-radius: 30px 220px 30px 220px;
+    transition: .3s;
+}
+.border-radius:hover{
+    border-radius: 220px 30px 220px 30px;
+    background-color: orangered;
+}
+
+/* Transform */
+.transform{
+    width: 300px;
+    height: 300px;
+    background-color: teal;
+    margin: 100px auto;
+    transition: .3s;
+}
+.transform:hover{
+    /* transform: rotate(45deg); */
+    /* transform: scale(1.1); */
+    /* transform: skew(30deg); */
+    transform: translate(200px);
+}
+
+/* Before & After */
+.before-after{
+    width: 450px;
+    height: 200px;
+    background-color: teal;
+    color: #fff;
+    margin: 100px auto;
+    padding: 20px;
+}
+.before-after h3::before{
+    content: "Before Text ";
+    color: red;
+}
+.before-after h3::after{
+    content: " After Text";
+    color: rgb(87, 32, 175);
+}
+.before-after-1 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: teal;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 100px auto;
+    color: #fff;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    overflow: hidden;
+}
+.before-after-1 a::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: tomato;
+    z-index: -1;
+    transition: .3s;
+}
+.before-after-1 a:hover::before{
+    left: 0;
+}
+.flag{
+    width: 600px;
+    height: 350px;
+    background-color: green;
+    position: relative;
+    margin: 100px auto;
+}
+.flag::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.flag::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 150%;
+    left: 0;
+    background-color: gray;
+}
+
+/* Position */
+.position{
+    width: 400px;
+    height: 500px;
+    background-color: tomato;
+    margin: 100px auto;
+    position: relative;
+}
+.position::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+.position-1{
+    background-image: url(img/bb.jpg);
+    width: 600px;
+    height: 350px;
+    margin: 100px auto;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.position-1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
+    opacity: .75;
+}
+.position-1 h1{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
